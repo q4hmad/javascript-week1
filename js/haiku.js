@@ -4,15 +4,17 @@ export class Poem {
   this.line2 = line2;
   this.line3 = line3;
   }
-checkTest() {
-    let arrayOfInputtedLines = [this.line1, this.line2, this.line3]
-    let simpleArray = []
 
-     arrayOfInputtedLines.forEach(function(line) {
-      simpleArray.push(line.toUpperCase());
-    })
+checkTest() {
+    let simpleArray = [];
+    let l1 = this.line1.toUpperCase().split('');
+    let l2 = this.line2.toUpperCase().split('');
+    let l3 = this.line3.toUpperCase().split('');
+    simpleArray.push(l1);
+    simpleArray.push(l2);
+    simpleArray.push(l3);
     return simpleArray;
-    console.log(simpleArray);
-  }
+}
+
 
 }
